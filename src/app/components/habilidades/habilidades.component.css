@@ -1,0 +1,76 @@
+@import "../../../styles.css";
+
+.body{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+
+}
+.container{
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+  padding: 40px;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  flex-wrap: wrap;
+  h1,p,h3,li{
+    background-color: transparent;
+    color: #F4F2E9;
+  }
+  .left{
+    width: 50%;
+    padding: 60px 80px;
+    min-height:max-content;
+    background-color: transparent;
+    h1{
+      font-size: 33px;
+    }
+    p{
+
+      margin-top: 40px;
+      font-size: 18px;
+    }
+    h3{
+      margin-top: 40px;
+      font-weight: 800;
+    }
+
+  }
+  .right{
+    background-color: transparent;
+    min-height: 100vh;
+    width: 50%;
+
+    padding:60px 80px;
+    h1{
+      font-size: 18px;
+      font-weight: 800;
+    }
+    li{
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width:860px){
+  .body{
+    .container{
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      .left{
+        width: 100%;
+        padding: 20px;
+      }
+      .right{
+        width: 100%;
+        padding: 20px;
+      }
+    }
+  }
+}

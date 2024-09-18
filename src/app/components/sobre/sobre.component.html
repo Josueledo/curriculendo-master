@@ -1,0 +1,31 @@
+<div id="sobre" class="main-container">
+
+    <div class="sobre">
+      <div class="primary">
+        <h1 class="orange">Sobre ✷</h1>
+        <p class="primary-color">
+          <strong>Curriculendo</strong> é um 
+          <span class="secondary-color">trabalho de<br> conclusão de curso</span> de 4 estudantes<br> 
+          técnicas em administração pela<br> 
+          Etec de Hortolândia.
+        </p>
+      </div>
+  
+      <div class="second">
+        <p class="primary-color">O projeto busca disseminar<br> conhecimento sobre a <strong>elaboração<br> correta de currículos</strong>, tendo em<br> vista que ele é fundamental para o<br> recrutamento e seleção de<br> candidatos para uma vaga de<br> emprego.</p>
+      </div>
+    </div>
+  
+    <div class="integrantes">
+        <div *ngFor="let integrante of integrantes" class="circle-container">
+          <div class="circle">
+            <img [src]="integrante.imagem" [alt]="integrante.nome">
+          </div>
+          <div class="name">{{ integrante.nome }}</div>
+        </div>
+      </div>
+      
+      
+  
+  </div>
+  

@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #005f73;
+    --secondary-color: #CA6702;
+  }
+
+
+*{
+    background-color: #F4F2E9;
+    padding: 0%;
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: "Nunito";
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
